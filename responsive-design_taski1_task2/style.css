@@ -1,0 +1,86 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.menu {
+    text-align: center;
+    background-color: cadetblue;
+}
+
+.menu ul {
+    list-style: upper-latin;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+
+}
+
+.menu a {
+    text-decoration: solid;
+    color: #e40000;
+    display: block;
+    transition: color 0.3s;
+
+}
+
+/* Horizontal menu for screens wider than 768px */
+@media (min-width: 769px) {
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu li {
+        display: inline;
+    }
+}
+
+/* Vertical menu for screens 768px or narrower */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* some extra style to the menu  */
+.menu a:hover {
+    color: #48ff00;
+    transform: scale(0.20);
+}
+
+
+.card{
+    display:flex;
+    border: 1px solid;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+/* Horizontal layout for screens wider than 768px */
+@media (min-width: 769px) {
+    .card {
+        flex-direction: row;
+        
+        
+    }
+
+ 
+}
+/* extra style to the cards*/
+div .card:hover{
+   color:#48ff00;
+    
+}
